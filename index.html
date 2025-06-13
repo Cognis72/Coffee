@@ -1,131 +1,199 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>บ้านกาแฟพี่เดียร์ | ร้านกาแฟอารมณ์บ้าน อร่อย อบอุ่น</title>
-  
-  <!-- SEO Meta -->
-  <meta name="description" content="บ้านกาแฟพี่เดียร์ ร้านกาแฟบรรยากาศอบอุ่น หอมกลิ่นกาแฟและเบเกอรีสดใหม่ทุกวัน เชิญแวะมานั่งชิลล์กับกาแฟถ้วยโปรดของคุณ">
-  <meta name="keywords" content="ร้านกาแฟ, กาแฟอร่อย, คาเฟ่น่ารัก, คาเฟ่อุดร, ร้านกาแฟอุดร, บ้านกาแฟพี่เดียร์">
-  <meta name="author" content="บ้านกาแฟพี่เดียร์">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="บ้านกาแฟพี่เดียร์ | คาเฟ่อบอุ่นในอุดร">
-  <meta property="og:description" content="ร้านกาแฟบรรยากาศดี กาแฟหอม เบเกอรี่อร่อย เชิญแวะนั่งพักผ่อนในวันสบายๆ">
-  <meta property="og:image" content="https://yourdomain.com/cover.jpg">
-  <meta property="og:url" content="https://yourdomain.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="บ้านกาแฟพี่เดียร์ | คาเฟ่น่ารักในอุดร">
-  <meta name="twitter:description" content="คาเฟ่บรรยากาศบ้านๆ สำหรับวันชิลล์ๆ พร้อมกาแฟและขนมแสนอร่อย">
-  <meta name="twitter:image" content="https://yourdomain.com/cover.jpg">
-
-  <!-- Font & Style -->
-  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baan Cafe Pee Dear - Authentic Thai Coffee Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Baan Cafe Pee Dear</h1>
+                </div>
+                
+                <!-- Language Toggle -->
+                <div class="language-toggle">
+                    <button id="lang-toggle" class="lang-btn">
+                        <span class="lang-text" data-en="TH" data-th="EN">TH</span>
+                    </button>
+                </div>
+                
+                <!-- Hamburger Menu Button -->
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-en="About" data-th="เกี่ยวกับ">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link" data-en="Menu" data-th="เมนู">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-en="Contact" data-th="ติดต่อ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<header class="main-header">
-  <div class="header-top">
-    <h1>บ้านกาแฟพี่เดียร์</h1>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </div>
-  <p>อบอุ่นเหมือนบ้าน หอมกรุ่นเหมือนรักแรก</p>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="translatable" data-en="Welcome to Baan Cafe Pee Dear" data-th="ยินดีต้อนรับสู่บ้านคาเฟ่พี่เดียร์">Welcome to Baan Cafe Pee Dear</h1>
+                <p class="translatable" data-en="Experience authentic Thai coffee culture in the heart of our traditional cafe" data-th="สัมผัสวัฒนธรรมกาแฟไทยแท้ ๆ ในใจกลางคาเฟ่แบบดั้งเดิมของเรา">Experience authentic Thai coffee culture in the heart of our traditional cafe</p>
+                <div class="hero-image">
+                    <img src="https://pixabay.com/get/g28375bc135187bdd5ec15fa70fb8bbe834700103942e1f43d395ce5e56787c268f256880a74bbb83b10cf80b7a35818caa97e7290470b3a0ab097625349d104d_1280.jpg" alt="Thai Coffee Shop Interior" loading="lazy">
+                </div>
+            </div>
+        </section>
 
-  <div class="nav-links" id="nav-links">
-    <a href="#about">เกี่ยวกับร้าน</a>
-    <a href="#menu">เมนู</a>
-    <a href="#review">รีวิว</a>
-    <a href="#contact">ติดต่อ</a>
-  </div>
-</header>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="translatable" data-en="About Our Cafe" data-th="เกี่ยวกับคาเฟ่ของเรา">About Our Cafe</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="translatable" data-en="Baan Cafe Pee Dear brings you the authentic taste of Thai coffee culture. Our name, which means 'Dear Uncle's House Cafe' in Thai, reflects our warm, family-oriented atmosphere where every guest is treated like family." data-th="บ้านคาเฟ่พี่เดียร์นำเสนอรสชาติแท้ของวัฒนธรรมกาแฟไทย ชื่อของเราหมายถึง 'คาเฟ่บ้านลุงที่รัก' ซึ่งสะท้อนบรรยากาศอบอุ่นแบบครอบครัว ที่ทุกคนจะได้รับการต้อนรับเหมือนคนในครอบครัว">Baan Cafe Pee Dear brings you the authentic taste of Thai coffee culture. Our name, which means "Dear Uncle's House Cafe" in Thai, reflects our warm, family-oriented atmosphere where every guest is treated like family.</p>
+                        <p class="translatable" data-en="We serve traditional Thai coffee alongside modern specialty drinks, all prepared with locally sourced beans and time-honored brewing methods. Our cozy space combines traditional Thai design elements with contemporary comfort, creating the perfect environment for relaxation and connection." data-th="เราเสิร์ฟกาแฟไทยดั้งเดิมควบคู่กับเครื่องดื่มสเปเชียลสมัยใหม่ ปรุงแต่งด้วยเมล็ดกาแฟท้องถิ่นและวิธีการชงแบบดั้งเดิม พื้นที่อบอุ่นของเราผสมผสานองค์ประกอบการออกแบบไทยดั้งเดิมกับความสะดวกสบายร่วมสมัย">We serve traditional Thai coffee alongside modern specialty drinks, all prepared with locally sourced beans and time-honored brewing methods. Our cozy space combines traditional Thai design elements with contemporary comfort, creating the perfect environment for relaxation and connection.</p>
+                        <p class="translatable" data-en="Whether you're looking for a strong Thai iced coffee to start your day or a peaceful corner to enjoy our signature drinks, Baan Cafe Pee Dear is your home away from home." data-th="ไม่ว่าคุณจะมองหากาแฟเย็นไทยแกร่งเพื่อเริ่มต้นวันใหม่ หรือมุมเงียบสงบเพื่อดื่มด่ำกับเครื่องดื่มซิกเนเจอร์ของเรา บ้านคาเฟ่พี่เดียร์คือบ้านหลังที่สองของคุณ">Whether you're looking for a strong Thai iced coffee to start your day or a peaceful corner to enjoy our signature drinks, Baan Cafe Pee Dear is your home away from home.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://pixabay.com/get/gddd0bde857be80030d060cf703dc66713202540c523e1640cbb09f49036eaf0b0bbf43d6cd94d414e5697fa058b575e3b490f41bb8ed67652a682898be20707c_1280.jpg" alt="Thai Cafe Atmosphere" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="translatable" data-en="Our Recommended Menu" data-th="เมนูแนะนำของเรา">Our Recommended Menu</h2>
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://pixabay.com/get/g597f2f2d55dec620f13ec1f4785a98073f59ad2240b087fb02d397c85a6a662963db1765e85f39c6176f72d0671438c8002ddb72f1b0fed074510df51c25b799_1280.jpg" alt="Thai Iced Coffee" loading="lazy">
+                        </div>
+                        <div class="menu-content">
+                            <h3 class="translatable" data-en="Thai Iced Coffee" data-th="กาแฟเย็นไทย">Thai Iced Coffee</h3>
+                            <p class="translatable" data-en="Traditional strong coffee served with condensed milk and ice" data-th="กาแฟแกร่งดั้งเดิมเสิร์ฟพร้อมนมข้นหวานและน้ำแข็ง">Traditional strong coffee served with condensed milk and ice</p>
+                            <span class="price">฿65</span>
+                        </div>
+                    </div>
 
+                    <!-- Menu Item 2 -->
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://pixabay.com/get/g05d5e4480707e31ae0136bcba51c948d95577af0c71220d140e2a330d4e7debec8d6a961f078fbe9cdfa24395a7145f31830cc54c353d4bd6b7d741c1e40047b_1280.jpg" alt="Thai Tea Latte" loading="lazy">
+                        </div>
+                        <div class="menu-content">
+                            <h3 class="translatable" data-en="Thai Tea Latte" data-th="ชาไทยลาเต้">Thai Tea Latte</h3>
+                            <p class="translatable" data-en="Creamy Thai tea blend with steamed milk and aromatic spices" data-th="ชาไทยครีมมี่ผสมนมร้อนและเครื่องเทศหอม">Creamy Thai tea blend with steamed milk and aromatic spices</p>
+                            <span class="price">฿75</span>
+                        </div>
+                    </div>
 
-  <section class="hero">
-    ยินดีต้อนรับสู่ร้านกาแฟของเรา ☕️
-  </section>
+                    <!-- Menu Item 3 -->
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://pixabay.com/get/g06baf5f4df0d6f22acf8cb65fcba79308385da8bfc0de4d24ae7686e71f63092b89d0ea1f26c41551db9ba3e41187b1b14784ffe93b23aa4d819df90375420d1_1280.jpg" alt="Coconut Coffee" loading="lazy">
+                        </div>
+                        <div class="menu-content">
+                            <h3 class="translatable" data-en="Coconut Coffee" data-th="กาแฟมะพร้าว">Coconut Coffee</h3>
+                            <p class="translatable" data-en="Rich espresso mixed with fresh coconut milk and palm sugar" data-th="เอสเปรสโซ่เข้มข้นผสมกะทิสดและน้ำตาลปีบ">Rich espresso mixed with fresh coconut milk and palm sugar</p>
+                            <span class="price">฿80</span>
+                        </div>
+                    </div>
 
-  <section id="about" class="section">
-    <h2>เกี่ยวกับร้าน</h2>
-    <p>บ้านกาแฟพี่เดียร์เปิดให้บริการด้วยใจ ใช้เมล็ดกาแฟคั่วสดจากเชียงใหม่ บรรยากาศอบอุ่น มีทั้งเครื่องดื่มและขนมหวานแสนอร่อย พร้อมมุมถ่ายรูปน่ารักๆ</p>
-  </section>
+                    <!-- Menu Item 4 -->
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://pixabay.com/get/ga757464b255d68699e54f6e1e9be2ae40045428adfe5a54a6a41c540604ec51b5028a80a48098df3bc18ad907be100da46ed7e4ae9331fb71b56141abb6c78c6_1280.jpg" alt="Pandan Frappe" loading="lazy">
+                        </div>
+                        <div class="menu-content">
+                            <h3 class="translatable" data-en="Pandan Frappe" data-th="ปั่นใบเตย">Pandan Frappe</h3>
+                            <p class="translatable" data-en="Refreshing blended drink with pandan leaf and vanilla notes" data-th="เครื่องดื่มปั่นสดชื่นจากใบเตยและกลิ่นวานิลลา">Refreshing blended drink with pandan leaf and vanilla notes</p>
+                            <span class="price">฿85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="menu" class="section">
-  <h2 style="text-align: center; margin-bottom: 30px;">เมนูแนะนำ</h2>
-  <div class="menu">
-    <div class="menu-item">
-      <img src="https://images.unsplash.com/photo-1558709334-902ede7ab6d8" alt="อเมริกาโน่เย็น">
-      <h3>อเมริกาโน่เย็น</h3>
-      <p>45 บาท</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://images.unsplash.com/photo-1572441710534-7f4c53f4de4f" alt="ลาเต้ร้อน">
-      <h3>ลาเต้ร้อน</h3>
-      <p>50 บาท</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://images.unsplash.com/photo-1598514982931-f674f1b9fdd8" alt="ชาเขียวมัทฉะ">
-      <h3>ชาเขียวมัทฉะ</h3>
-      <p>55 บาท</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://images.unsplash.com/photo-1602741268989-b35aa3d3e3ec" alt="เค้กช็อกโกแลต">
-      <h3>เค้กช็อกโกแลต</h3>
-      <p>60 บาท</p>
-    </div>
-  </div>
-</section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="translatable" data-en="Visit Us" data-th="มาเยี่ยมเรา">Visit Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="opening-hours">
+                            <h3 class="translatable" data-en="Opening Hours" data-th="เวลาเปิด-ปิด">Opening Hours</h3>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="day translatable" data-en="Monday - Friday" data-th="จันทร์ - ศุกร์">Monday - Friday</span>
+                                    <span class="time">7:00 AM - 8:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day translatable" data-en="Saturday - Sunday" data-th="เสาร์ - อาทิตย์">Saturday - Sunday</span>
+                                    <span class="time">8:00 AM - 9:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day translatable" data-en="Public Holidays" data-th="วันหยุดนักขัตฤกษ์">Public Holidays</span>
+                                    <span class="time">9:00 AM - 7:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <h3 class="translatable" data-en="Get in Touch" data-th="ติดต่อเรา">Get in Touch</h3>
+                            <div class="line-chat">
+                                <a href="https://line.me/ti/p/@baancafepeedear" target="_blank" rel="noopener noreferrer" class="line-btn translatable" data-en="Chat with us on LINE" data-th="แชทกับเราใน LINE">
+                                    Chat with us on LINE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-image">
+                        <img src="https://pixabay.com/get/gbeea95905394deee8539282709390db6194696dc5cd9c1a9f59d40de4b0dd206d25bd470096e9abda5d529f790ac1a8f5e0139f37ee8e5c6baba0f1ca2e3478f_1280.jpg" alt="Cafe Atmosphere" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Baan Cafe Pee Dear</h3>
+                    <p class="translatable" data-en="Authentic Thai Coffee Experience" data-th="ประสบการณ์กาแฟไทยแท้">Authentic Thai Coffee Experience</p>
+                </div>
+                <div class="footer-copyright">
+                    <p class="translatable" data-en="&copy; 2024 Baan Cafe Pee Dear. All rights reserved." data-th="&copy; 2024 บ้านคาเฟ่พี่เดียร์ สงวนลิขสิทธิ์">&copy; 2024 Baan Cafe Pee Dear. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <section id="contact" class="section">
-    <h2>ติดต่อเรา</h2>
-    <p>เปิดทุกวัน 08:00 - 18:00 น.<br>โทร: 089-123-4567<br>หรือแชทผ่าน Line</p>
-    <a class="contact-btn" href="https://lin.ee/yourlineid" target="_blank">แชทกับร้าน</a>
-  </section>
-  <section id="review" class="section">
-    <!--อัพเดทฟอร์มภายหลัง
-  <h2>รีวิวจากลูกค้า</h2>-->
-
-<!-- <form id="reviewForm">
-  <input type="text" id="nameInput" placeholder="ชื่อของคุณ" required>
-  <textarea id="reviewInput" placeholder="เขียนรีวิวของคุณ..." required></textarea>
-
- <div class="rating">
-    <label>ให้คะแนน:</label>
-    <div id="stars">
-      <span data-value="1">★</span>
-      <span data-value="2">★</span>
-      <span data-value="3">★</span>
-      <span data-value="4">★</span>
-      <span data-value="5">★</span>
-    </div>
-  </div>
-
-  <button type="submit">ส่งรีวิว</button>
-</form>-->
-
-
-
-  <!--<div id="reviewList">
-    <h3>รีวิวล่าสุด</h3>
-    <ul id="reviewsContainer"></ul>
-  </div>
-</section>-->
-
-
-  <footer>
-    © 2025 บ้านกาแฟพี่เดียร์ | รังสรรค์ด้วยความรักและกลิ่นกาแฟ
-  </footer>
-
-  <script src="script.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
